@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react'
+import Word from './Word.jsx'
+import InputSingle from './InputSingle.jsx'
+import InputFull from './InputFull.jsx'
 import './App.css'
 
 
@@ -22,8 +25,9 @@ function App() {
     <>
       <h1>Displaying random word from API</h1>
       <h2></h2>
-      
-        
+      <Word />
+      <InputSingle/>
+      <InputFull/>
     </>
   )
 }
