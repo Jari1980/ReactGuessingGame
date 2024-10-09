@@ -6,7 +6,7 @@ import GuessCounter from './GuessCounter.jsx'
 import './App.css'
 
 
-function App() {
+function App({guess}) {
   const [word, setWord] = useState("")
   const [wordArr, setWordArr] = useState([])
 
@@ -31,7 +31,7 @@ function App() {
       <InputSingle/>
       <InputFull/>
       <br/>
-      <GuessCounter/>
+      
     </>
   )
 }
