@@ -1,12 +1,17 @@
+import { useState } from 'react'
 import './Input.css'
 
 export default function InputSingle(){
+    const [char, setChar] = useState("")
+    function handleCharGuess() {
+        console.log(char)
+    }
 
     return (
         <>
         <label>
-            Guess a character in the word above
-            <input id="inputSingle" name="charGuess" maxlength="1"/>
+            <input id="inputSingle" value={char} name="charGuess" maxLength="1" onChange={(e) => {setChar(e.target.value)}}/>
+            <button type="button" onClick={handleCharGuess}>Guess a char</button>
         </label>
         </>
     )
