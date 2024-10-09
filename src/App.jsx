@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react'
 import Word from './Word.jsx'
 import InputSingle from './InputSingle.jsx'
 import InputFull from './InputFull.jsx'
+import GuessCounter from './GuessCounter.jsx'
 import './App.css'
 
 
 function App() {
   const [word, setWord] = useState("")
   const [wordArr, setWordArr] = useState([])
+
 
   /*useEffect(() => {
     async function fetchData() {
@@ -28,6 +30,8 @@ function App() {
       <Word />
       <InputSingle/>
       <InputFull/>
+      <br/>
+      <GuessCounter/>
     </>
   )
 }
