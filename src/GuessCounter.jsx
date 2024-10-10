@@ -5,11 +5,6 @@ export default function GuessCounter({parentToChild}){
     //const [guess, setGuess] = useState(0)
     
 
-    return (
-        <>
-        <h3>Guess counter</h3>
-        <h1>{parentToChild}</h1>
-        </>
-    )
-    
+    return ("")
+       
 }
